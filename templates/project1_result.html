@@ -1,540 +1,531 @@
 <!DOCTYPE html>
-<html
-  data-wf-domain="business-starter-template.webflow.io"
-  data-wf-page="5c6ec20c2a03dd266ea75399"
-  data-wf-site="5c6eb5400253230156de2bd6"
->
-  <head>
-    <meta charset="utf-8" />
-    <title>Projects</title>
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link
-      href="https://assets.website-files.com/5c6eb5400253230156de2bd6/css/business-starter-template.webflow.d0b16c944.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <style>
-      button,
-      input,
-      optgroup,
-      select {
-        color: inherit;
-        font: inherit;
-        margin: 0;
-      }
+<html data-wf-domain="business-starter-template.webflow.io" data-wf-page="5c6ec20c2a03dd266ea75399"
+  data-wf-site="5c6eb5400253230156de2bd6">
 
-      button {
-        overflow: visible;
-      }
+<head>
+  <meta charset="utf-8" />
+  <title>Projects</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link
+    href="https://assets.website-files.com/5c6eb5400253230156de2bd6/css/business-starter-template.webflow.d0b16c944.css"
+    rel="stylesheet" type="text/css" />
+  <style>
+    button,
+    input,
+    optgroup,
+    select {
+      color: inherit;
+      font: inherit;
+      margin: 0;
+    }
 
-      button,
-      select {
-        text-transform: none;
-      }
+    button {
+      overflow: visible;
+    }
 
-      button,
-      html input[type="button"],
-      input[type="reset"] {
-        -webkit-appearance: button;
-        cursor: pointer;
-      }
+    button,
+    select {
+      text-transform: none;
+    }
 
-      button[disabled],
-      html input[disabled] {
-        cursor: default;
-      }
+    button,
+    html input[type="button"],
+    input[type="reset"] {
+      -webkit-appearance: button;
+      cursor: pointer;
+    }
 
-      button::-moz-focus-inner,
-      input::-moz-focus-inner {
-        border: 0;
-        padding: 0;
-      }
+    button[disabled],
+    html input[disabled] {
+      cursor: default;
+    }
 
-      input {
-        line-height: normal;
-      }
+    button::-moz-focus-inner,
+    input::-moz-focus-inner {
+      border: 0;
+      padding: 0;
+    }
 
-      input[type="checkbox"],
-      input[type="radio"] {
-        box-sizing: border-box;
-        padding: 0;
-      }
+    input {
+      line-height: normal;
+    }
 
-      input[type="number"]::-webkit-inner-spin-button,
-      input[type="number"]::-webkit-outer-spin-button {
-        height: auto;
-      }
+    input[type="checkbox"],
+    input[type="radio"] {
+      box-sizing: border-box;
+      padding: 0;
+    }
 
-      input[type="search"] {
-        -webkit-appearance: none;
-      }
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      height: auto;
+    }
 
-      input[type="search"]::-webkit-search-cancel-button,
-      input[type="search"]::-webkit-search-decoration {
-        -webkit-appearance: none;
-      }
-      [class^="w-icon-"],
-      [class*=" w-icon-"] {
-        speak: none;
-        font-variant: normal;
-        text-transform: none;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        font-style: normal;
-        font-weight: normal;
-        line-height: 1;
-        font-family: webflow-icons !important;
-      }
-      .container-gpt {
-        background-color: #000;
-        color: white;
-        max-width: 100%;
-        width: 100%;
-        padding-bottom: 10px;
-        margin-bottom: 40px;
-      }
-      .space {
-        padding: 10px;
-      }
-      .container-gpt h1 {
-        color: #2d3338;
+    input[type="search"] {
+      -webkit-appearance: none;
+    }
 
-        text-shadow: none;
-        margin: 0px 0px;
-        padding: 0px;
-        font-family: Roboto Condensed, sans-serif;
-        font-size: 69px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 54px;
-        text-align: center;
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-decoration {
+      -webkit-appearance: none;
+    }
 
-        text-shadow: none;
-        color: #fff;
-        letter-spacing: 8px;
-      }
-      .container-gpt .border {
-        border: 8px solid #fff;
-        margin: 8px auto;
-        max-width: 50%;
-        padding: 10px 10px 10px 0px;
-      }
-      .container-gpt p {
-        margin-top: 0;
-        margin-bottom: 10px;
-      }
-      .w-list-unstyled {
-        padding-left: 0;
-        list-style: none;
-      }
+    [class^="w-icon-"],
+    [class*=" w-icon-"] {
+      speak: none;
+      font-variant: normal;
+      text-transform: none;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1;
+      font-family: webflow-icons !important;
+    }
 
-      .w-embed:before,
-      .w-embed:after {
-        content: " ";
-        grid-area: 1 / 1 / 2 / 2;
-        display: table;
-      }
+    .container-gpt {
+      background-color: #000;
+      color: white;
+      max-width: 100%;
+      width: 100%;
+      padding-bottom: 10px;
+      margin-bottom: 40px;
+    }
 
-      .w-embed:after {
-        clear: both;
-      }
+    .space {
+      padding: 10px;
+    }
 
-      .w-video {
-        width: 100%;
-        padding: 0;
-        position: relative;
-      }
+    .container-gpt h1 {
+      color: #2d3338;
 
-      .w-video iframe,
-      .w-video object,
-      .w-video embed {
-        width: 100%;
-        height: 100%;
-        border: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-      button,
-      [type="button"],
-      [type="reset"] {
-        cursor: pointer;
-        -webkit-appearance: button;
-        border: 0;
-      }
+      text-shadow: none;
+      margin: 0px 0px;
+      padding: 0px;
+      font-family: Roboto Condensed, sans-serif;
+      font-size: 69px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 54px;
+      text-align: center;
 
-      .container-gpt .w-form {
-        margin: 0 0 15px;
-      }
+      text-shadow: none;
+      color: #fff;
+      letter-spacing: 8px;
+    }
 
-      .container-gpt .w-form-done {
-        text-align: center;
-        background-color: #ddd;
-        padding: 20px;
-        display: none;
-      }
+    .container-gpt .border {
+      border: 8px solid #fff;
+      margin: 8px auto;
+      max-width: 50%;
+      padding: 10px 10px 10px 0px;
+    }
 
-      .container-gpt .w-form-fail {
-        background-color: #ffdede;
-        margin-top: 10px;
-        padding: 10px;
-        display: none;
-      }
+    .container-gpt p {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
 
-      .label {
-        margin-bottom: 5px;
-        font-weight: bold;
-        display: block;
-      }
+    .w-list-unstyled {
+      padding-left: 0;
+      list-style: none;
+    }
 
-      .container-gpt p {
-        letter-spacing: 0;
-        text-shadow: none;
-        margin-top: 0;
-        margin-bottom: 5px;
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 23px;
-      }
-      #text-button {
-        width: 100%;
-        height: 54px;
-        color: #fff;
-        text-align: center;
-        text-transform: uppercase;
-        background-color: rgba(0, 0, 0, 0);
-        border: 3px solid #fff;
-        margin-left: -1px;
-        padding: 4px 29px;
-        font-size: 22px;
-        font-weight: 700;
-        text-decoration: none;
-        transition: background-color 0.3s, color 0.3s;
-        display: block;
-      }
+    .w-embed:before,
+    .w-embed:after {
+      content: " ";
+      grid-area: 1 / 1 / 2 / 2;
+      display: table;
+    }
+
+    .w-embed:after {
+      clear: both;
+    }
+
+    .w-video {
+      width: 100%;
+      padding: 0;
+      position: relative;
+    }
+
+    .w-video iframe,
+    .w-video object,
+    .w-video embed {
+      width: 100%;
+      height: 100%;
+      border: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    button,
+    [type="button"],
+    [type="reset"] {
+      cursor: pointer;
+      -webkit-appearance: button;
+      border: 0;
+    }
+
+    .container-gpt .w-form {
+      margin: 0 0 15px;
+    }
+
+    .container-gpt .w-form-done {
+      text-align: center;
+      background-color: #ddd;
+      padding: 20px;
+      display: none;
+    }
+
+    .container-gpt .w-form-fail {
+      background-color: #ffdede;
+      margin-top: 10px;
+      padding: 10px;
+      display: none;
+    }
+
+    .label {
+      margin-bottom: 5px;
+      font-weight: bold;
+      display: block;
+    }
+
+    .container-gpt p {
+      letter-spacing: 0;
+      text-shadow: none;
+      margin-top: 0;
+      margin-bottom: 5px;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 23px;
+    }
+
+    #text-button {
+      width: 100%;
+      height: 54px;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      background-color: rgba(0, 0, 0, 0);
+      border: 3px solid #fff;
+      margin-left: -1px;
+      padding: 4px 29px;
+      font-size: 22px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s;
+      display: block;
+    }
 
 
+    .container-gpt .subtitle {
+      text-shadow: none;
+      padding-bottom: 67px;
+      font-family: Roboto Condensed, sans-serif;
+      font-size: 31px;
+      font-weight: 400;
+      line-height: 35px;
+      text-align: center;
+    }
+
+    .field {
+      height: 54px;
+      color: #262c46;
+      text-align: center;
+      text-transform: uppercase;
+      border: 0 solid #000;
+      margin-bottom: 19px;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 16px;
+      transition: box-shadow 0.15s;
+    }
+
+    .field:focus {
+      box-shadow: inset 0 0 0 2px #00caf2;
+    }
+
+    .container-gpt .sign-up-form {
+      width: 415px;
+      margin: 35px auto 66px;
+      display: block;
+    }
+
+    .container-gpt .beta-line {
+      width: 100%;
+      height: 1px;
+      float: left;
+      background-color: rgba(255, 255, 255, 0.36);
+    }
+
+    @media screen and (max-width: 991px) {
       .container-gpt .subtitle {
         text-shadow: none;
-        padding-bottom: 67px;
-        font-family: Roboto Condensed, sans-serif;
-        font-size: 31px;
-        font-weight: 400;
-        line-height: 35px;
-        text-align: center;
+        font-size: 29px;
       }
 
-      .field {
-        height: 54px;
-        color: #262c46;
-        text-align: center;
-        text-transform: uppercase;
-        border: 0 solid #000;
-        margin-bottom: 19px;
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 16px;
-        transition: box-shadow 0.15s;
+      .content-wrapper {
+        width: 81%;
       }
 
-      .field:focus {
-        box-shadow: inset 0 0 0 2px #00caf2;
+      .container-gpt {
+        padding-left: 57px;
+        padding-right: 57px;
       }
 
-      .container-gpt .sign-up-form {
-        width: 415px;
-        margin: 35px auto 66px;
-        display: block;
+      .social-btn {
+        transition: all 0.2s;
+      }
+
+      .social-btn:hover {
+        opacity: 0.8;
+      }
+
+      .join {
+        width: 50%;
+        text-shadow: none;
+        font-size: 21px;
       }
 
       .container-gpt .beta-line {
         width: 100%;
-        height: 1px;
-        float: left;
-        background-color: rgba(255, 255, 255, 0.36);
       }
-      @media screen and (max-width: 991px) {
-        .container-gpt .subtitle {
-          text-shadow: none;
-          font-size: 29px;
-        }
+    }
 
-        .content-wrapper {
-          width: 81%;
-        }
-
-        .container-gpt {
-          padding-left: 57px;
-          padding-right: 57px;
-        }
-
-        .social-btn {
-          transition: all 0.2s;
-        }
-
-        .social-btn:hover {
-          opacity: 0.8;
-        }
-
-        .join {
-          width: 50%;
-          text-shadow: none;
-          font-size: 21px;
-        }
-
-        .container-gpt .beta-line {
-          width: 100%;
-        }
-      }
-      @media screen and (max-width: 767px) {
-        body {
-          padding-top: 65px;
-        }
-
-        .container-gpt .subtitle {
-          text-shadow: none;
-          margin-left: 0;
-          margin-right: 0;
-          padding-bottom: 43px;
-        }
-
-        .container-gpt .sign-up-form {
-          margin-bottom: 64px;
-        }
-
-        .content-wrapper {
-          width: 100%;
-          padding-left: 24px;
-          padding-right: 24px;
-        }
-
-        .header-section {
-          padding-top: 37px;
-        }
-
-        .footer-section {
-          background-color: rgba(0, 0, 0, 0.49);
-          padding-top: 23px;
-          padding-bottom: 23px;
-          position: static;
-        }
-
-        .container-gpt {
-          padding-left: 10px;
-          padding-right: 10px;
-        }
-
-        .social-section {
-          padding-top: 35px;
-          padding-bottom: 35px;
-        }
-
-        .container-gpt .logo,
-        .join {
-          text-shadow: none;
-        }
+    @media screen and (max-width: 767px) {
+      body {
+        padding-top: 65px;
       }
 
-      @media screen and (max-width: 479px) {
-        h2 {
-          text-shadow: none;
-          font-size: 30px;
-          line-height: 31px;
-        }
-
-        .container-gpt p {
-          text-shadow: none;
-          font-size: 20px;
-        }
-
-        #text-button {
-          width: 100%;
-          border-top-left-radius: 2px;
-          border-bottom-left-radius: 2px;
-          margin-left: 0;
-        }
-
-        .container-gpt .subtitle {
-          text-shadow: none;
-          padding-bottom: 36px;
-          font-size: 22px;
-          line-height: 26px;
-        }
-
-        .field {
-          width: 100%;
-          text-align: center;
-          border-top-right-radius: 2px;
-          border-bottom-right-radius: 2px;
-        }
-
-        .container-gpt .sign-up-form {
-          width: 100%;
-          margin-top: 22px;
-        }
-
-        .social-widget {
-          width: 96px;
-        }
-
-        .social-widget-wrapper {
-          width: 221px;
-          margin-bottom: 15px;
-          margin-left: auto;
-          margin-right: auto;
-          display: block;
-        }
-
-        .copyright {
-          text-align: center;
-          margin-bottom: 16px;
-        }
-
-        .container-gpt {
-          padding-left: 10px;
-          padding-right: 10px;
-        }
-
-        .image-crop {
-          height: auto;
-          margin-bottom: 40px;
-        }
-
-        .social-section {
-          padding-left: 14px;
-          padding-right: 14px;
-        }
-
-        .align-right {
-          text-align: center;
-        }
-
-        .social-btn {
-          margin-right: 17px;
-        }
-
-        .container-gpt .logo {
-          text-shadow: none;
-          font-size: 43px;
-        }
-
-        .join {
-          width: 75%;
-          letter-spacing: 4px;
-          text-shadow: none;
-          font-size: 19px;
-          line-height: 22px;
-        }
-
-        .container-gpt .beta-line {
-          width: 100%;
-        }
+      .container-gpt .subtitle {
+        text-shadow: none;
+        margin-left: 0;
+        margin-right: 0;
+        padding-bottom: 43px;
       }
-      #question {
+
+      .container-gpt .sign-up-form {
+        margin-bottom: 64px;
+      }
+
+      .content-wrapper {
         width: 100%;
-        height: 100px;
-        text-align: center;
-        border: 3px solid #fff;
-        margin-left: -1px;
-        /* padding: 4px 29px; */
-        color: gray;
+        padding-left: 24px;
+        padding-right: 24px;
       }
-    </style>
-  </head>
 
-  <body>
-    <div
-      data-collapse="medium"
-      data-animation="default"
-      data-duration="400"
-      class="navigation w-nav"
-    >
-      <div class="navigation-wrap">
-        <a href="/" class="logo-link w-nav-brand"
-          ><img
-            src="data:image/png;base64,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"
-            width="108"
-            alt=""
-            class="logo-image"
-        /></a>
-        <div class="menu">
-          <nav role="navigation" class="navigation-items w-nav-menu">
-            <a href="/" class="navigation-item w-nav-link">Home</a>
-            <a href="/projects" class="navigation-item w-nav-link w--current"
-              >Work</a
-            >
-            <a href="/team" class="navigation-item w-nav-link">Team</a>
-          </nav>
-          <div class="menu-button w-nav-button">
-            <img
-              src="https://assets.website-files.com/5c6eb5400253230156de2bd6/5c6eb8fd2f27af658094fa4a_menu-icon.png"
-              width="22"
-              alt=""
-              class="menu-icon"
-            />
-          </div>
+      .header-section {
+        padding-top: 37px;
+      }
+
+      .footer-section {
+        background-color: rgba(0, 0, 0, 0.49);
+        padding-top: 23px;
+        padding-bottom: 23px;
+        position: static;
+      }
+
+      .container-gpt {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .social-section {
+        padding-top: 35px;
+        padding-bottom: 35px;
+      }
+
+      .container-gpt .logo,
+      .join {
+        text-shadow: none;
+      }
+    }
+
+    @media screen and (max-width: 479px) {
+      h2 {
+        text-shadow: none;
+        font-size: 30px;
+        line-height: 31px;
+      }
+
+      .container-gpt p {
+        text-shadow: none;
+        font-size: 20px;
+      }
+
+      #text-button {
+        width: 100%;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+        margin-left: 0;
+      }
+
+      .container-gpt .subtitle {
+        text-shadow: none;
+        padding-bottom: 36px;
+        font-size: 22px;
+        line-height: 26px;
+      }
+
+      .field {
+        width: 100%;
+        text-align: center;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+      }
+
+      .container-gpt .sign-up-form {
+        width: 100%;
+        margin-top: 22px;
+      }
+
+      .social-widget {
+        width: 96px;
+      }
+
+      .social-widget-wrapper {
+        width: 221px;
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+
+      .copyright {
+        text-align: center;
+        margin-bottom: 16px;
+      }
+
+      .container-gpt {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .image-crop {
+        height: auto;
+        margin-bottom: 40px;
+      }
+
+      .social-section {
+        padding-left: 14px;
+        padding-right: 14px;
+      }
+
+      .align-right {
+        text-align: center;
+      }
+
+      .social-btn {
+        margin-right: 17px;
+      }
+
+      .container-gpt .logo {
+        text-shadow: none;
+        font-size: 43px;
+      }
+
+      .join {
+        width: 75%;
+        letter-spacing: 4px;
+        text-shadow: none;
+        font-size: 19px;
+        line-height: 22px;
+      }
+
+      .container-gpt .beta-line {
+        width: 100%;
+      }
+    }
+
+    #question {
+      width: 100%;
+      height: 100px;
+      text-align: center;
+      border: 3px solid #fff;
+      margin-left: -1px;
+      /* padding: 4px 29px; */
+      color: gray;
+    }
+  </style>
+</head>
+
+<body>
+  <div data-collapse="medium" data-animation="default" data-duration="400" class="navigation w-nav">
+    <div class="navigation-wrap">
+      <a href="/" class="logo-link w-nav-brand"><img
+          src="data:image/png;base64,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"
+          width="108" alt="" class="logo-image" /></a>
+      <div class="menu">
+        <nav role="navigation" class="navigation-items w-nav-menu">
+          <a href="/" class="navigation-item w-nav-link">Home</a>
+          <a href="/projects" class="navigation-item w-nav-link w--current">Work</a>
+          <a href="/model" class="navigation-item w-nav-link">Model</a>
+          <a href="/team" class="navigation-item w-nav-link">Team</a>
+        </nav>
+        <div class="menu-button w-nav-button">
+          <img src="https://assets.website-files.com/5c6eb5400253230156de2bd6/5c6eb8fd2f27af658094fa4a_menu-icon.png"
+            width="22" alt="" class="menu-icon" />
         </div>
-        <a
-          href="mailto:mail@business.com?subject=You&#x27;ve%20got%20mail!"
-          class="button cc-contact-us w-inline-block"
-        >
-          <div>Contact US</div>
-        </a>
+      </div>
+      <a href="mailto:mail@business.com?subject=You&#x27;ve%20got%20mail!" class="button cc-contact-us w-inline-block">
+        <div>Contact US</div>
+      </a>
+    </div>
+  </div>
+  <div class="section cc-home-wrap">
+    <div class="intro-header cc-subpage">
+      <div class="intro-content">
+        <div class="heading-jumbo">Our work<br /></div>
       </div>
     </div>
-    <div class="section cc-home-wrap">
-      <div class="intro-header cc-subpage">
-        <div class="intro-content">
-          <div class="heading-jumbo">Our work<br /></div>
-        </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="section-heading-wrap">
+        <div class="label cc-light">Our Work</div>
+        <h2>Team projects</h2>
       </div>
-    </div>
-    <div class="section">
-      <div class="container">
-        <div class="section-heading-wrap">
-          <div class="label cc-light">Our Work</div>
-          <h2>Team projects</h2>
-        </div>
 
-        <div class="w-layout-grid projects-grid">
-          <div id="w-node-7763e2d38cdc-6ea75399">
-            <div class="container-gpt">
-              <div class="space"></div>
-    
-              <h1 class="logo border">ChatGPT</h1>
-              <p class="subtitle">ChatGPT에게 무엇이든 물어보세요.</p>
-              <div class="beta-line"></div>    
-              <div class="sign-up-form w-form">
-                {% load static %} {% block extrahead %}
-                <link rel="stylesheet" href="{% static 'gtp/style.css' %}" />
-                {% endblock %}
-                <form action="./project1_result" method="post" entype="application/x-www-form-urlencoded">
-                  {% csrf_token %}
-                  <div id="file-module-0">
-                    <textarea id="question" name="question" placeholder="질문을 입력하세요.">{{question}}</textarea>
-                  </div>
-                  <div>
-                    <label>응답</label>
-                    <span id="result">{{result}}</span>
-                    <button id="text-button" type="submit" class="'button">질문</button>
+      <div class="w-layout-grid projects-grid">
+        <div id="w-node-7763e2d38cdc-6ea75399">
+          <div class="container-gpt">
+            <div class="space"></div>
+
+            <h1 class="logo border">ChatGPT</h1>
+            <p class="subtitle">ChatGPT에게 무엇이든 물어보세요.</p>
+            <div class="beta-line"></div>
+            <div class="sign-up-form w-form">
+              {% load static %} {% block extrahead %}
+              <link rel="stylesheet" href="{% static 'gtp/style.css' %}" />
+              {% endblock %}
+              <form action="./project1_result" method="post" entype="application/x-www-form-urlencoded">
+                {% csrf_token %}
+                <div id="file-module-0">
+                  <textarea id="question" name="question" placeholder="질문을 입력하세요.">{{question}}</textarea>
                 </div>
-                </form>
-              </div>
+                <div>
+                  <label>응답</label>
+                  <span id="result">{{result}}</span>
+                  <button id="text-button" type="submit" class="'button">질문</button>
+                </div>
+              </form>
             </div>
-              <div class="project-name-wrap"><a href="/selfchatgpt" class="project-name-link">Project #1</a>
-                  <div class="paragraph-light">ChatGPT에게 질문하기</div>
-              </div>
+          </div>
+          <div class="project-name-wrap"><a href="/selfchatgpt" class="project-name-link">Project #1</a>
+            <div class="paragraph-light">ChatGPT에게 질문하기</div>
+          </div>
 
+        </div>
+        <div id="w-node-7763e2d38ce3-6ea75399"><a href="/selfsignlanguagetochatgpt/"
+            class="project-cover-link w-inline-block"><img
+              src="https://assets.website-files.com/5c6eb5400253230156de2bd6/5cdc00e3a4217f7862153ae2_portfolio%202%20-%20wide.svg"
+              alt="" class="project-cover-pic" /></a>
+          <div class="project-name-wrap"><a href="/selfsignlanguagetochatgpt" class="project-name-link">Project #2</a>
+            <div class="paragraph-light">수어 번역과 ChatGPT</div>
           </div>
-          <div id="w-node-7763e2d38ce3-6ea75399"><a href="/selfsignlanguagetochatgpt/"
-                  class="project-cover-link w-inline-block"><img
-                      src="https://assets.website-files.com/5c6eb5400253230156de2bd6/5cdc00e3a4217f7862153ae2_portfolio%202%20-%20wide.svg"
-                      alt="" class="project-cover-pic" /></a>
-              <div class="project-name-wrap"><a href="/selfsignlanguagetochatgpt" class="project-name-link">Project #2</a>
-                  <div class="paragraph-light">수어 번역과 ChatGPT</div>
-              </div>
-          </div>
-          <!-- <div id="w-node-7763e2d38cea-6ea75399"><a href="/work/project-3"
+        </div>
+        <!-- <div id="w-node-7763e2d38cea-6ea75399"><a href="/work/project-3"
                   class="project-cover-link w-inline-block"><img
                       src="https://assets.website-files.com/5c6eb5400253230156de2bd6/5cdc030da4217f36e7154d83_portfolio%203%20-%20wide.svg"
                       alt="" class="project-cover-pic" /></a>
@@ -543,19 +534,18 @@
               </div>
           </div> -->
       </div>
+    </div>
   </div>
-</div>
-<div class="section">
-  <div class="container">
+  <div class="section">
+    <div class="container">
       <div class="footer-wrap"><a href="https://aivle.kt.co.kr/" target="_blank"
-              class="webflow-link w-inline-block"><img
-                  src="data:image/png;base64,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"
-                  width="25" alt="" class="webflow-logo-tiny" />
-              <div class="paragraph-tiny">AIVLE SCHOOL 3기 AI 트랙 미니프로젝트7차 21조</div>
-          </a></div>
+          class="webflow-link w-inline-block"><img
+            src="data:image/png;base64,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"
+            width="25" alt="" class="webflow-logo-tiny" />
+          <div class="paragraph-tiny">AIVLE SCHOOL 3기 AI 트랙 미니프로젝트7차 21조</div>
+        </a></div>
+    </div>
   </div>
-</div>
 </body>
 
 </html>
-   
