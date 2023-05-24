@@ -26,6 +26,7 @@ def getChatResult(self, id):
         chatResult = self.t_exec(query)
 
 def index(request):
+    print('왜 안댐?')
     return render(request, 'languagechat/index.html')
 
 def chat(request):
