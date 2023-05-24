@@ -36,28 +36,54 @@
       </a>
     </div>
   </div>
-  <div class="section cc-home-wrap">
-    <div class="intro-header cc-subpage">
-      <div class="intro-content">
-        <div class="heading-jumbo">ChatGPT를 활용한 수어 번역<br /></div>
+  <div class="section">
+    <div class="container">
+      <div class="section-heading-wrap">
+        <div class="label cc-light">Project #2</div>
+        <h2>ChatGPT를 활용한 수어 번역</h2>
+      </div>
+      <div class="w-layout-grid projects-grid">
+        <div id="w-node-7763e2d38cdc-6ea75399">
+          <div class="container-gpt">
+            <div class="space"></div>
+
+            <h1 class="logo border">ChatGPT</h1>
+            <p class="subtitle">ChatGPT에게 무엇이든 물어보세요.</p>
+            <div class="beta-line"></div>
+            <div class="sign-up-form w-form">
+              {% load static %} {% block extrahead %}
+              <link rel="stylesheet" href="{% static 'gtp/style.css' %}" />
+              {% endblock %}
+              <form action="/selfsignlanguagetochatgpt" method="get" entype="application/x-www-form-urlencoded">
+                {% csrf_token %}
+                <div id="file-module-0">
+                  <div style="background-color: white; align-items: center; text-align: center; color: black; font-size: 16px;" id="question" name="question"">{{question}}</div>
+                </div>
+                <br>
+                <div>
+                  <label style="text-align: center; font-size: 24px; padding: 15px;">ChatGPT의 응답은?</label>
+                  <span id="result">{{result}}</span>
+                  <button id="text-button" type="submit" class="button">
+                    다시 질문하기
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
-  <!-- {% load static %}
-  <link rel="stylesheet" href="{% static 'languagechat/chat_style.css' %}"> -->
-  <div class="one-box">
-    <form action="chat" method="post" entype="application/x-www-form-urlencoded">
-      {% csrf_token %}
-      <div id="file-module-0">
-        <label>chatgtp에게 요청하기</label>
-        <textarea id="question" name="question">{{question}}</textarea>
-      </div>
-      <div>
-        <label>응답</label>
-        <span id="result">{{result}}</span>
-      </div>
-    </form>
+  <div class="section">
+    <div class="container">
+      <div class="footer-wrap"><a href="https://aivle.kt.co.kr/" target="_blank"
+          class="webflow-link w-inline-block"><img
+            src="data:image/png;base64,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"
+            width="25" alt="" class="webflow-logo-tiny" />
+          <div class="paragraph-tiny">AIVLE SCHOOL 3기 AI 트랙 미니프로젝트7차 21조</div>
+        </a></div>
+    </div>
+  </div>
 </body>
 
 </html>
