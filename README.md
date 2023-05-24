@@ -10,5 +10,5 @@
  
 ## 수화번역 서비스
 <img src="https://velog.velcdn.com/images/brightface/post/18923624-ca81-4bc1-9dba-67b8d0e8b726/image.png">
-## 번역
+
 <img src= "https://velog.velcdn.com/images/brightface/post/268aec14-89c0-4965-98bd-b59ad8d2caab/image.png">
