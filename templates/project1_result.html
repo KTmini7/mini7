@@ -499,16 +499,15 @@
               {% load static %} {% block extrahead %}
               <link rel="stylesheet" href="{% static 'gtp/style.css' %}" />
               {% endblock %}
-              <form action="/project1_result" method="post" entype="application/x-www-form-urlencoded">
+              <form action="./project1_result" method="post" entype="application/x-www-form-urlencoded">
                 {% csrf_token %}
                 <div id="file-module-0">
                   <textarea id="question" name="question" placeholder="질문을 입력하세요.">{{question}}</textarea>
                 </div>
                 <div>
+                  <label>응답</label>
                   <span id="result">{{result}}</span>
-                  <button id="text-button" type="submit" class="'button">
-                    질문
-                  </button>
+                  <button id="text-button" type="submit" class="'button">질문</button>
                 </div>
               </form>
             </div>
@@ -516,6 +515,7 @@
           <div class="project-name-wrap"><a href="/selfchatgpt" class="project-name-link">Project #1</a>
             <div class="paragraph-light">ChatGPT에게 질문하기</div>
           </div>
+
         </div>
         <div id="w-node-7763e2d38ce3-6ea75399"><a href="/selfsignlanguagetochatgpt/"
             class="project-cover-link w-inline-block"><img
