@@ -44,11 +44,7 @@ button {
   }
   .btn-12 span {
     background: rgb(0,172,238);
-<<<<<<< HEAD
-    background: linear-gradient(0deg, rgb(15, 50, 63) 0%, rgb(21, 21, 22) 100%);
-=======
-  background: linear-gradient(0deg, rgb(100, 102, 105) 0%, rgb(109, 112, 111) 100%);
->>>>>>> 926d859f513d3ca71c3fde9e6c5280d0d99fc37c
+    background: linear-gradient(0deg, rgb(100, 102, 105) 0%, rgb(109, 112, 111) 100%);
     display: block;
     position: absolute;
     width: 130px;
