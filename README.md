@@ -6,7 +6,7 @@
  <img src="https://velog.velcdn.com/images/brightface/post/2c892e41-e90a-4dc3-b66f-a9fb0ba67b74/image.png">
  
 ## 수화번역 서비스
-<img src="https://velog.velcdn.com/images/brightface/post/2c892e41-e90a-4dc3-b66f-a9fb0ba67b74/image.png">
+<img src="[https://velog.velcdn.com/images/brightface/post/2c892e41-e90a-4dc3-b66f-a9fb0ba67b74/image.png](https://velog.velcdn.com/images/brightface/post/18923624-ca81-4bc1-9dba-67b8d0e8b726/image.png)">
 
 ## 번역결과
 <img src= "https://velog.velcdn.com/images/brightface/post/18923624-ca81-4bc1-9dba-67b8d0e8b726/image.png">
