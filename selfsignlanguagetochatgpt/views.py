@@ -78,7 +78,6 @@ def chat(request):
             pred_1 = pred.argmax(axis=1)
 
             result_str = class_names[pred_1][0]
-            print(result_str)
 
 
             #결과를 DB에 저장한다.
