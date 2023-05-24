@@ -37,7 +37,7 @@ def chat(request):
         #각 파일별 예측 결과들을 모아야 질문을 위한 언어가 완성된다.
         files = request.FILES.getlist('files')
         chatGptPrompt = ""
-        for idx,file in enumerate(files, start=0):
+        for idx,file in reversed(list(enumerate(files, start=0))):
                 # files:
 
             # logger.error('file', file)
@@ -78,6 +78,7 @@ def chat(request):
             pred_1 = pred.argmax(axis=1)
 
             result_str = class_names[pred_1][0]
+            print(result_str)
 
 
             #결과를 DB에 저장한다.
