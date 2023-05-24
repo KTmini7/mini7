@@ -1,6 +1,8 @@
 {% load static %}
 {% block extrahead %}
 <link rel="stylesheet" href="{% static 'languagechat/style.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <script>
     let idNum = 0;
     function addFile(){
@@ -27,16 +29,24 @@
     }
 </script>
 {% endblock %}
+
+<div class="three">
+    <h1 >수어 번역 By Chat GPT</h1>
+</div>
+
+
 <form action="chat" method="post" enctype="multipart/form-data">
     {% csrf_token %}
-    <span id="file-module-0">
-        <fieldset>
-            <legend><h1>파일 업로드</h1></legend>
-            <input name="files" type="file">
 
+    <span id="file-module-0" style="padding: 100%">
+        <fieldset style="border-radius: 5px; padding: 5px; min-height:100px; border:2px solid black; background-color:#0000;">
+        <legend style="margin-left:50px;background-color:#0000; padding-left:30px; padding-top:5px; padding-right:30px; padding-bottom:5px; ; color:black; border-radius:20px; border:3px solid black; font-size:30px;" ><b> File Upload </b> </legend>
+        <label> <br/><br/> </label>
+        <input name="files" type="file">
         </fieldset>
     </span>
-    <button onclick="addFile()" type="button" class="custom-btn btn-12"><span>GO!!</span><span>파일추가!</span></button>
+    <div><button onclick="addFile()" type="button" class="custom-btn btn-12"><span>GO!!</span><span>파일추가!</span></button></div>
     <div><input type="submit" value="ChatGPT에게 수어로 문의하기"></div>
+
 
 </form> 
