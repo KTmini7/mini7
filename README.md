@@ -11,4 +11,4 @@
 ## 수화번역 서비스
 <img src="https://velog.velcdn.com/images/brightface/post/18923624-ca81-4bc1-9dba-67b8d0e8b726/image.png">
 
-<img src= "https://velog.velcdn.com/images/brightface/post/268aec14-89c0-4965-98bd-b59ad8d2caab/image.png">
+<img src= "https://velog.velcdn.com/images/brightface/post/cedaafda-159c-4a70-94e8-a2c36978a03b/image.png">
